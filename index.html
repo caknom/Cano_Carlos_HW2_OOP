@@ -7,9 +7,25 @@
     <title>HW #2: OOP JS, MODULES AND BUNDLING</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <script defer src="js/main.js"></script>
+    <script defer type="module" src="js/main.js"></script>
 </head>
-
 <body>
+
+    <div class="container">
+        <h1>Boxing Fighter Profiles</h1>
+
+        <div class="form-container">
+            <input type="text" id="name" placeholder="Fighter Name">
+            <input type="number" id="age" placeholder="Age">
+            <input type="number" id="wins" placeholder="Wins">
+            <input type="number" id="losses" placeholder="Losses">
+            <button id="addFighter">Add Fighter</button>
+        </div>
+
+        <div class="fighters-list">
+            <h2>Fighter List</h2>
+            <div id="fightersContainer"></div>
+        </div>
+    </div>
 </body>
 </html>
